@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1070934406042",
+    "project_id": "vaan-2024a-cc-gr1",
+    "storage_bucket": "vaan-2024a-cc-gr1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070934406042:android:a89d7e61b1824ee0184023",
+        "android_client_info": {
+          "package_name": "com.example.a2024accgr1vfay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjk_yPGsn5kFC4PMFoxoRvqFUCXcp5ncw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
