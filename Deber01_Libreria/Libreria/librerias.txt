@@ -1,0 +1,2 @@
+1,Quito, Av. Marques y 10 de Octubre,Enrique Flama,0967153312,Balcon
+2,Cuenca,Av. Teresita y Don Tomas,Carlos Idrovo,1234567890,Cafeteria
