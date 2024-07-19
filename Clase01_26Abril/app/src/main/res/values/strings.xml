@@ -1,5 +1,17 @@
 <resources>
+    <string name="app_name">Mi Aplicación</string>
     <string name="saludo"> Texto portrait</string>
+    <string name="editar">Editar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="c_vida">C. Vida</string>
+    <string name="l_view">L. View</string>
+    <string name="anadir">Anadir</string>
     <color name="background">#00FF00</color>
     <color name="texto">#FF0000</color>
+
+    <string-array name="string_array_opciones">
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miercoles</item>
+    </string-array>
 </resources>

@@ -13,6 +13,18 @@
         android:theme="@style/Theme.2024ACCGR1VFAY"
         tools:targetApi="31">
         <activity
+            android:name=".FRecyclerView"
+            android:exported="false" />
+        <activity
+            android:name=".ECrudEntrenador"
+            android:exported="false" />
+        <activity
+            android:name=".CIntentExplicitoParametros"
+            android:exported="false" />
+        <activity
+            android:name=".BListView"
+            android:exported="false" />
+        <activity
             android:name=".ACicloVida"
             android:exported="false" />
         <activity
