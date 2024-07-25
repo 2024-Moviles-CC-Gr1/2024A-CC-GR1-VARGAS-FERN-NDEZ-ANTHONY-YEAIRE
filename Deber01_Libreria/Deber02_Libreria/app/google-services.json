@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "879302133003",
+    "project_id": "entidadeslibreria-libro",
+    "storage_bucket": "entidadeslibreria-libro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879302133003:android:60c9d28f73cb1069654e0e",
+        "android_client_info": {
+          "package_name": "com.example.libreria"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSt20WRXKtgJpvfmp2J76D8CAyB0ZaR8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
