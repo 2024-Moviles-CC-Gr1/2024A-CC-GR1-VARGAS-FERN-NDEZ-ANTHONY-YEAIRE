@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/communities"
+        android:icon="@drawable/ic_communities"
+        android:title="Communities" />
+    <item
+        android:id="@+id/create"
+        android:icon="@drawable/ic_create"
+        android:title="Create" />
+    <item
+        android:id="@+id/messages"
+        android:icon="@drawable/ic_messages"
+        android:title="Messages" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile" />
 </menu>

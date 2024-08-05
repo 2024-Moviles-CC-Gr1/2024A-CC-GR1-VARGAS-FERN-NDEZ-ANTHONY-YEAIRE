@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "792003918553",
+    "project_id": "reddit-33733",
+    "storage_bucket": "reddit-33733.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792003918553:android:fec92b50b2564d868a9cc8",
+        "android_client_info": {
+          "package_name": "com.example.replicareddit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8D1nfSHfLJCVdlGqINnm9RQ_CD8s-Rh8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
