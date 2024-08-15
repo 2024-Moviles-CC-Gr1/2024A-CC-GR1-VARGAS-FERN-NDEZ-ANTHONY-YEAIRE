@@ -19,7 +19,6 @@ class SQLiteHelperLibro(
             """
                 CREATE TABLE LIBRO(
                     id_libro INTEGER PRIMARY KEY AUTOINCREMENT,
-                    id_libreria INTEGER,
                     titulo VARCHAR(50),
                     autor VARCHAR(50),
                     genero VARCHAR(50),
@@ -33,7 +32,7 @@ class SQLiteHelperLibro(
         p0: SQLiteDatabase?, p1: Int, p2: Int) {}
 
     fun crearLibro(
-        id_libreria: Int,
+        //id_libreria: Int,
         titulo: String,
         autor: String,
         genero: String,
@@ -41,7 +40,7 @@ class SQLiteHelperLibro(
     ): Boolean {
         val basedatosEscritura = writableDatabase
         val valoresAGuardar = ContentValues()
-        valoresAGuardar.put("id_libreria", id_libreria)
+        //valoresAGuardar.put("id_libreria", id_libreria)
         valoresAGuardar.put("titulo", titulo)
         valoresAGuardar.put("autor", autor)
         valoresAGuardar.put("genero", genero)
@@ -53,7 +52,7 @@ class SQLiteHelperLibro(
                 valoresAGuardar // valores
             )
         basedatosEscritura.close()
-        return resultadoGuardar != -1L
+        return if(resultadoGuardar.toInt() == -1) false else true
     }
 
     fun eliminarLibroFormulario(id_libro: Int): Boolean {
@@ -66,12 +65,12 @@ class SQLiteHelperLibro(
                 parametrosConsultaDelete
             )
         conexionEscritura.close()
-        return resultadoEliminacion != -1
+        return if(resultadoEliminacion.toInt()==-1) false else true
     }
 
     fun actualizarLibroFormulario(
         id_libro: Int,
-        id_libreria: Int,
+        //id_libreria: Int,
         titulo: String,
         autor: String,
         genero: String,
@@ -79,7 +78,7 @@ class SQLiteHelperLibro(
     ): Boolean {
         val conexionEscritura = writableDatabase
         val valoresAActualizar = ContentValues()
-        valoresAActualizar.put("id_libreria", id_libreria)
+        //valoresAActualizar.put("id_libreria", id_libreria)
         valoresAActualizar.put("titulo", titulo)
         valoresAActualizar.put("autor", autor)
         valoresAActualizar.put("genero", genero)
@@ -93,13 +92,13 @@ class SQLiteHelperLibro(
                 parametrosConsultaActualizar
             )
         conexionEscritura.close()
-        return resultadoActualizacion != -1
+        return if (resultadoActualizacion.toInt()==-1) false else true
     }
 
     fun consultarLibroPorID(id_libro: Int): BLibro? {
         val baseDatosLectura = readableDatabase
         val scriptConsultaLectura = """
-            SELECT * FROM PARTE WHERE id_libro = ?
+            SELECT * FROM LIBRO WHERE id_libro = ?
         """.trimIndent()
         val arregloParametrosConsultaLectura = arrayOf(
             id_libro.toString()
@@ -117,17 +116,17 @@ class SQLiteHelperLibro(
             do {
                 val libro = BLibro(
                     resultadoConsultaLectura.getInt(0),
-                    resultadoConsultaLectura.getInt(1),
+                    //resultadoConsultaLectura.getInt(1),
+                    resultadoConsultaLectura.getString(1),
                     resultadoConsultaLectura.getString(2),
                     resultadoConsultaLectura.getString(3),
-                    resultadoConsultaLectura.getString(4),
-                    resultadoConsultaLectura.getDouble(5)
+                    resultadoConsultaLectura.getDouble(4)
                 )
                 arregloRespuesta.add(libro)
             } while (resultadoConsultaLectura.moveToNext())
         }
         resultadoConsultaLectura.close()
         baseDatosLectura.close()
-        return if (arregloRespuesta.isNotEmpty()) arregloRespuesta[0] else null
+        return if(arregloRespuesta.size > 0) arregloRespuesta[0] else null
     }
 }

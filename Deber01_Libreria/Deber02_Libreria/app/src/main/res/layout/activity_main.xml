@@ -39,4 +39,14 @@
         app:layout_constraintEnd_toEndOf="@+id/btn_libreria"
         app:layout_constraintStart_toStartOf="@+id/btn_libreria" />
 
+    <Button
+        android:id="@+id/btn_mapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Mapa"
+        app:layout_constraintEnd_toEndOf="@+id/txt_menu"
+        app:layout_constraintStart_toStartOf="@+id/txt_menu"
+        app:layout_constraintTop_toBottomOf="@+id/txt_menu" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

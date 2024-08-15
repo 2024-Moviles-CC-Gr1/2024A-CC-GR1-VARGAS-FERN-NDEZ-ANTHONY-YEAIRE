@@ -37,6 +37,11 @@ class MainActivity : AppCompatActivity() {
         botonLibro.setOnClickListener {
             irActividad((CRUDLibro::class.java))
         }
+
+        val botonGMaps = findViewById<Button>(R.id.btn_mapa)
+        botonGMaps.setOnClickListener {
+            irActividad(GGoogleMapsActivity::class.java)
+        }
     }
 
     fun irActividad(

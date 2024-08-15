@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.068" />
 
     <Button
-        android:id="@+id/btn_actualizar_bdd1"
+        android:id="@+id/btn_actualizar_bdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Actualizar"
@@ -31,35 +31,35 @@
         app:layout_constraintVertical_bias="0.222" />
 
     <Button
-        android:id="@+id/btn_crear_bdd1"
+        android:id="@+id/btn_crear_bdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
         android:text="Crear"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_actualizar_bdd1"
-        app:layout_constraintEnd_toStartOf="@+id/btn_actualizar_bdd1"
-        app:layout_constraintTop_toTopOf="@+id/btn_actualizar_bdd1"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_actualizar_bdd"
+        app:layout_constraintEnd_toStartOf="@+id/btn_actualizar_bdd"
+        app:layout_constraintTop_toTopOf="@+id/btn_actualizar_bdd"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/btn_buscar_bdd1"
+        android:id="@+id/btn_buscar_bdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:text="Buscar"
-        app:layout_constraintEnd_toEndOf="@+id/btn_actualizar_bdd1"
-        app:layout_constraintStart_toStartOf="@+id/btn_actualizar_bdd1"
-        app:layout_constraintTop_toBottomOf="@+id/btn_actualizar_bdd1" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_actualizar_bdd"
+        app:layout_constraintStart_toStartOf="@+id/btn_actualizar_bdd"
+        app:layout_constraintTop_toBottomOf="@+id/btn_actualizar_bdd" />
 
     <Button
-        android:id="@+id/btn_eliminar_bdd1"
+        android:id="@+id/btn_eliminar_bdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:text="Eliminar"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_actualizar_bdd1"
-        app:layout_constraintStart_toEndOf="@+id/btn_actualizar_bdd1"
-        app:layout_constraintTop_toTopOf="@+id/btn_actualizar_bdd1" />
+        app:layout_constraintBottom_toBottomOf="@+id/btn_actualizar_bdd"
+        app:layout_constraintStart_toEndOf="@+id/btn_actualizar_bdd"
+        app:layout_constraintTop_toTopOf="@+id/btn_actualizar_bdd" />
 
     <EditText
         android:id="@+id/input_id_libro"
@@ -77,24 +77,10 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/input_id_libreria"
-        android:layout_width="220dp"
-        android:layout_height="43dp"
-        android:layout_marginBottom="544dp"
-        android:ems="10"
-        android:hint="Ingrese el ID de la Libreria"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.837"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_crud_libro"
-        app:layout_constraintVertical_bias="0.953" />
-
-    <EditText
         android:id="@+id/input_titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="460dp"
         android:ems="10"
         android:hint="Ingrese el Titulo"
         android:inputType="text"
@@ -102,8 +88,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.144"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_id_libreria"
-        app:layout_constraintVertical_bias="0.078" />
+        app:layout_constraintTop_toBottomOf="@+id/input_id_libro" />
 
     <EditText
         android:id="@+id/input_autor"

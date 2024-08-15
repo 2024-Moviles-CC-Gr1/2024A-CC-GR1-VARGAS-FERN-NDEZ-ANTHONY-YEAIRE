@@ -89,7 +89,7 @@ class SQLiteHelperLibreria(
     fun consultarLibreriaPorID(id_libreria: Int): BLibreria? { //BLibreria
         val baseDatosLectura = readableDatabase
         val scriptConsultaLectura = """
-            SELECT * FROM AUTO WHERE id_libreria = ?
+            SELECT * FROM LIBRERIA WHERE id_libreria = ?
         """.trimIndent()
         val arregloParametrosConsultaLectura = arrayOf(
             id_libreria.toString()
